@@ -1,0 +1,23 @@
+figure{
+  img{
+    height: 280px;;
+    width:100%
+  }
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+  text-decoration: none;
+  border-radius: 50%;
+}
+.my-pagination /deep/ .ngx-pagination a,
+.ngx-pagination button {
+  text-decoration: none;
+  outline: none;
+}
+.my-pagination /deep/ .ngx-pagination {
+  margin-left: -50px;
+  text-align: center;
+}
+.my-pagination /deep/ .ngx-pagination {
+  margin-right: 220px;
+}

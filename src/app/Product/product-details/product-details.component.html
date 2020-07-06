@@ -1,0 +1,36 @@
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<div class="site-wrap">
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-5" >
+          <img  [src]="product.image" alt="Image" class="img-fluid" style="border-radius: 15px;">
+        </div>
+        <div class="col-md-6" style="text-align: center;">
+          <h2 class="text-black mb-1">{{product.name}}</h2>
+          <p class="mb-5" style="font-weight: bold;">{{product.category}}</p>
+          <p class="mb-5 text-primary" style="font-weight: bold;">{{product.description}}</p>
+          <p class="mb-5" ><strong class="text-primary h4">{{product.price}} $</strong></p>
+
+          <div class="mb-5">
+            <input type="number" #amount>
+          </div>
+
+          <p><button class="buy-now btn  btn-primary mb-4" (click)="addToCart(product.name ,product.image, product.price , amount.value)" >Add To Cart</button></p>
+
+          <div class="row">
+            <div class="col col-md-6 col-sm-12 ">
+              <a [routerLink]="['/edit', product.id]" class=" btn btn-warning px-5" style="color:black">Edit Product</a>
+            </div>
+            <div class="col col-md-6 col-sm-12">
+
+              <a  class=" btn btn-danger px-5" style="color:black" (click)="onDelete(product.id)">Delete Product</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

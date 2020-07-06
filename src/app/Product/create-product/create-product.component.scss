@@ -1,0 +1,33 @@
+
+mat-form-field{
+  width: 100%;
+  margin-bottom: 30px;
+}
+textarea {
+  width: 100%;
+  margin: 25px 0;
+}
+button{
+  margin-bottom: 20px;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.image-preview {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  height: 100%;
+}
+
+button{
+  font-size:17px ; color:rgb(64,69,83);background-color: rgb(254,238,0); border: none;
+}
